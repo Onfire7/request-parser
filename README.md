@@ -1,4 +1,34 @@
-request-parser
+Request-Parser
 ==============
 
 An extremely simple node.js http request parser.
+
+Request Parser was born out of my frustration of having to choose
+between a huge middleware library and parsing POST requests myself.
+
+## Goals
+* Super simple
+* Minimalist
+* One call
+* Router agnostic
+
+## Example
+```javascript
+var parse = require('request-parser');
+
+// Wrap your route callback
+parse(function(req, res){
+	
+	// Your callback will be wraped with a parser function.
+	// It will be called once any post data is finished parsing.
+	
+	res.get
+	res.post
+	
+	// Do Stuff
+	
+});
+```
+
+## License
+[The MIT License](http://www.opensource.org/licenses/mit-license.php).
