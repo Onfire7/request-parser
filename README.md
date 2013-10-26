@@ -1,5 +1,6 @@
 Request-Parser
 ==============
+[![Build Status](https://travis-ci.org/Onfire7/request-parser.png)](https://travis-ci.org/Onfire7/request-parser)
 
 An extremely simple node.js http request parser.
 
