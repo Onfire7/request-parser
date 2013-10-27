@@ -29,7 +29,7 @@ function Parse (func) {
 				if (req.headers['Content-Type'].toLowerCase()  !== 'multipart/form-data' ) {
 					req.post = querystring.parse(postdata);
 				}else{
-					
+					// TODO add binary support...
 				}
 			});
 		}

@@ -29,7 +29,7 @@ var testRequestGET = {
   upgrade: false
 }
 
-var testRequestPOST = {
+var testRequestPOST = { // TODO add proper test for POST requests.
     type: "req",
     url: 'http://test.com/folder?test=pass'
 }
