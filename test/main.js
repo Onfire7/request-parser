@@ -1,5 +1,5 @@
 var should = require('should');
-var parse = require('../index');
+var parse = require('../index.js');
 
 describe('parse', function() {
     describe('with 2 arguments', function() {
