@@ -7,6 +7,10 @@ An extremely simple node.js http request parser.
 Request Parser was born out of my frustration of having to choose
 between a huge middleware library and parsing POST requests myself.
 
+## Note
+Request-Parser is still in an early alpha.
+It is very likely to break, and bug reports and commits are very welcome.
+
 ## Goals
 * Super simple
 * Minimalist

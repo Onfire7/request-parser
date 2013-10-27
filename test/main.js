@@ -3,21 +3,25 @@ var parse = require('../index.js');
 
 describe('parse', function() {
     describe('with 2 arguments', function() {
-        it('returns an empty array', function() {
-            var req = {type:"req"};
+        it('changes result to pass', function() {
+            var req = {
+                type: "req",
+                url: 'http://test.com/folder?test=pass'
+            };
             var res = {type:"res"};
             
-            var result = 'fail';
             
             var func = parse(function(req, res){
-                if (req.type == 'req' && res.type == 'res') {
-                    result = 'pass';
-                }
+                
+                res.type.should.eql('res');
+                req.type.should.eql('req');
+                req.get.test.should.eql('pass');
+                
+                done();
+                
             });
             
             func(req, res);
-            
-            result.should.eql('pass');
         });
     });
 });

@@ -22,9 +22,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "gitHead": "8d4b39b950018185ab987bc74000aa989133f140",
-  "dependencies": {
-    "querystring": "~0.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "",
     "should": ""
