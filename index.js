@@ -1,6 +1,6 @@
 var url = require('url');
 
-function parse(func) {
+var parse = function (func) {
 	return function(req, res){
 		
 		// Handle GET variables
