@@ -1,9 +1,10 @@
 var should = require('should');
-var parse = require('../index.js');
+var parse = require('../index');
+
 
 describe('parse', function() {
     describe('with 2 arguments', function() {
-        it('changes result to pass', function() {
+        it('changes result to pass', function(done) {
             var req = {
                 type: "req",
                 url: 'http://test.com/folder?test=pass'
