@@ -2,10 +2,22 @@ var should = require('should');
 var parse = require('../index');
 
 describe('parse', function() {
-    describe('with no arguments', function() {
+    describe('with 2 arguments', function() {
         it('returns an empty array', function() {
-            var result = parse();
-            result.should.eql([]);
+            var req = {type:"req"};
+            var res = {type:"res"};
+            
+            var result = 'fail';
+            
+            var func = parse(function(req, res){
+                if (req.type == 'req' && res.type == 'res') {
+                    result = 'pass';
+                }
+            });
+            
+            func(req, res);
+            
+            result.should.eql('pass');
         });
     });
 });
