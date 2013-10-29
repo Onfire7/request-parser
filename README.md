@@ -28,8 +28,8 @@ parse(function(req, res){
 	// Your callback will be wraped with a parser function.
 	// It will be called once any post data is finished parsing.
 	
-	res.get
-	res.post
+	req.get
+	req.post
 	
 	// Do Stuff
 	
