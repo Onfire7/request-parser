@@ -9,7 +9,8 @@ between a huge middleware library and parsing POST requests myself.
 
 ## Note
 Request-Parser is still in an early alpha.
-It is very likely to break, and bug reports and commits are very welcome.
+It doesn't yet handle multipart uploads.
+It is also very likely to break, and bug reports and commits are very welcome.
 
 ## Goals
 * Super simple
