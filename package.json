@@ -1,6 +1,6 @@
 {
   "name": "request-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An extremely simple node.js http request parser.",
   "main": "index.js",
   "scripts": {

@@ -8,8 +8,9 @@ function Parse (func) {
 		var parts = url.parse(req.url,true);
 		if (parts.query) req.get = parts.query;
 		
+		
 		// Handle POST variables
-		if (req.method.toUpperCase() === 'POST') {
+		if (req.method === 'POST') {
 			
 			req.postData = "";
 			
@@ -26,15 +27,16 @@ function Parse (func) {
 			
 			req.on('end', function(){
 				// If not posted as binary data
-				if (req.headers['Content-Type'].toLowerCase()  !== 'multipart/form-data' ) {
-					req.post = querystring.parse(postdata);
+				if (req.headers['content-type'].toLowerCase()  !== 'multipart/form-data' ) {
+					req.post = qs.parse(req.postData);
+					func(req, res);
 				}else{
-					// TODO add binary support...
+					// TODO add binary support... Possiblly with poor-form
 				}
 			});
+		}else{
+			func(req, res);
 		}
-		
-		func(req, res);
 	};
 };
 
