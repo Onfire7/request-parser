@@ -18,6 +18,11 @@ It is also very likely to break, and bug reports and commits are very welcome.
 * One call
 * Router agnostic
 
+## Installation
+```
+npm install request-parser
+```
+
 ## Example
 ```javascript
 var parse = require('request-parser');
